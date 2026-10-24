@@ -22,6 +22,8 @@
 
 - Support 500+ concurrent users; target login/page loads below 3 seconds, class attendance/grade updates below 5 seconds, and ordinary report queries within 1-5 seconds (under 10 seconds for large datasets).
 - Target 99.5% uptime, backups every four hours, and recovery within 15 minutes. These require deployment and operations work; local development cannot establish the uptime target.
+- Aim for 24/7 web/mobile access and meet the school's applicable accessibility standards. The material names Android 8+ and iOS 13+ and calls for support on limited-resource devices; the initial delivery will be responsive web, with native apps left as a deployment decision.
+- Run alongside existing paper-based processes during the transition period.
 - Provide web/mobile access, cached offline viewing, and offline teacher entry with later synchronization. Conflict handling and duplicate prevention must be designed before offline writes are enabled.
 - Use HTTPS in deployment, secure password handling, role-based access, activity logging, and a second factor for administrators. Deployment must configure transport security and managed database encryption/backups.
 - The school SIS is expected to provide consistent CSV exports. Import validation and missing-data reporting are planned; a live SIS connection is not specified.
